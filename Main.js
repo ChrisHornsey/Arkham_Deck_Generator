@@ -8,4 +8,8 @@ function randomElement(array){
     return array[Math.floor(Math.random()*array.length)];
 }
 
-console.log(randomElement(investigators));
+function buildMessage(){
+    return randomElement(investigators) + " " + randomElement(verbs) + " " + randomElement(campaigns);
+}
+
+console.log(buildMessage());
